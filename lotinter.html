@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Check Lottery</title>
+<script>
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+document.addEventListener('DOMContentLoaded', function() {
+var lotteryData = {"first": {"price": "6000000.00", "number": [{"round": 1, "value": "095867"}]}, "second": {"price": "200000.00", "number": [{"round": 4, "value": "038546"}, {"round": 1, "value": "226374"}, {"round": 5, "value": "469262"}, {"round": 2, "value": "469899"}, {"round": 3, "value": "974224"}]}, "third": {"price": "80000.00", "number": [{"round": 3, "value": "351293"}, {"round": 10, "value": "500076"}, {"round": 1, "value": "602409"}, {"round": 2, "value": "605705"}, {"round": 8, "value": "635741"}, {"round": 9, "value": "792643"}, {"round": 7, "value": "854153"}, {"round": 4, "value": "870121"}, {"round": 5, "value": "870199"}, {"round": 6, "value": "918535"}]}, "fourth": {"price": "40000.00", "number": [{"round": 30, "value": "054378"}, {"round": 41, "value": "061220"}, {"round": 33, "value": "064127"}, {"round": 45, "value": "080324"}, {"round": 47, "value": "080935"}, {"round": 3, "value": "176131"}, {"round": 37, "value": "189882"}, {"round": 22, "value": "216743"}, {"round": 32, "value": "239634"}, {"round": 26, "value": "239745"}, {"round": 44, "value": "277743"}, {"round": 43, "value": "285832"}, {"round": 11, "value": "297370"}, {"round": 35, "value": "320191"}, {"round": 15, "value": "334863"}, {"round": 42, "value": "353159"}, {"round": 29, "value": "356841"}, {"round": 31, "value": "358285"}, {"round": 1, "value": "362708"}, {"round": 20, "value": "407016"}, {"round": 40, "value": "483416"}, {"round": 36, "value": "484382"}, {"round": 17, "value": "491697"}, {"round": 23, "value": "492425"}, {"round": 7, "value": "492713"}, {"round": 38, "value": "525880"}, {"round": 12, "value": "531163"}, {"round": 5, "value": "535571"}, {"round": 49, "value": "567078"}, {"round": 10, "value": "637241"}, {"round": 46, "value": "647195"}, {"round": 27, "value": "650811"}, {"round": 13, "value": "657429"}, {"round": 39, "value": "720544"}, {"round": 25, "value": "724029"}, {"round": 28, "value": "739679"}, {"round": 2, "value": "769072"}, {"round": 21, "value": "788403"}, {"round": 24, "value": "795096"}, {"round": 18, "value": "826219"}, {"round": 8, "value": "852326"}, {"round": 9, "value": "896010"}, {"round": 50, "value": "908323"}, {"round": 4, "value": "915869"}, {"round": 19, "value": "929860"}, {"round": 34, "value": "934227"}, {"round": 16, "value": "944230"}, {"round": 48, "value": "971492"}, {"round": 14, "value": "972893"}, {"round": 6, "value": "993372"}]}, "fifth": {"price": "20000.00", "number": [{"round": 51, "value": "023901"}, {"round": 1, "value": "025262"}, {"round": 74, "value": "025367"}, {"round": 81, "value": "066572"}, {"round": 45, "value": "068055"}, {"round": 37, "value": "079389"}, {"round": 73, "value": "093803"}, {"round": 44, "value": "097582"}, {"round": 15, "value": "098847"}, {"round": 25, "value": "107471"}, {"round": 28, "value": "113884"}, {"round": 20, "value": "114925"}, {"round": 100, "value": "116703"}, {"round": 76, "value": "124481"}, {"round": 16, "value": "125567"}, {"round": 93, "value": "131975"}, {"round": 69, "value": "134811"}, {"round": 3, "value": "142585"}, {"round": 46, "value": "158151"}, {"round": 78, "value": "162642"}, {"round": 27, "value": "164904"}, {"round": 54, "value": "185518"}, {"round": 42, "value": "192930"}, {"round": 90, "value": "202685"}, {"round": 94, "value": "229531"}, {"round": 84, "value": "236059"}, {"round": 67, "value": "253956"}, {"round": 62, "value": "255582"}, {"round": 48, "value": "315088"}, {"round": 56, "value": "327964"}, {"round": 77, "value": "339017"}, {"round": 61, "value": "341894"}, {"round": 2, "value": "358243"}, {"round": 59, "value": "399634"}, {"round": 85, "value": "403429"}, {"round": 88, "value": "405000"}, {"round": 83, "value": "412167"}, {"round": 10, "value": "415136"}, {"round": 13, "value": "429285"}, {"round": 30, "value": "430576"}, {"round": 65, "value": "432767"}, {"round": 96, "value": "435309"}, {"round": 60, "value": "439974"}, {"round": 71, "value": "446710"}, {"round": 89, "value": "468010"}, {"round": 95, "value": "477765"}, {"round": 31, "value": "484180"}, {"round": 70, "value": "487933"}, {"round": 91, "value": "493380"}, {"round": 9, "value": "511891"}, {"round": 55, "value": "523900"}, {"round": 47, "value": "532754"}, {"round": 68, "value": "532771"}, {"round": 49, "value": "537016"}, {"round": 53, "value": "537232"}, {"round": 99, "value": "543493"}, {"round": 7, "value": "552918"}, {"round": 6, "value": "557358"}, {"round": 41, "value": "564552"}, {"round": 97, "value": "583198"}, {"round": 34, "value": "601216"}, {"round": 12, "value": "607346"}, {"round": 40, "value": "614351"}, {"round": 11, "value": "617582"}, {"round": 19, "value": "625546"}, {"round": 79, "value": "625571"}, {"round": 4, "value": "663880"}, {"round": 66, "value": "667669"}, {"round": 24, "value": "673641"}, {"round": 87, "value": "683276"}, {"round": 36, "value": "720970"}, {"round": 18, "value": "723059"}, {"round": 57, "value": "723188"}, {"round": 8, "value": "727189"}, {"round": 64, "value": "749286"}, {"round": 17, "value": "750176"}, {"round": 14, "value": "758194"}, {"round": 50, "value": "784362"}, {"round": 92, "value": "786141"}, {"round": 22, "value": "796590"}, {"round": 80, "value": "798917"}, {"round": 39, "value": "799415"}, {"round": 38, "value": "810785"}, {"round": 58, "value": "817943"}, {"round": 86, "value": "820542"}, {"round": 63, "value": "829353"}, {"round": 33, "value": "838234"}, {"round": 23, "value": "839199"}, {"round": 32, "value": "847344"}, {"round": 98, "value": "856340"}, {"round": 52, "value": "858210"}, {"round": 72, "value": "869949"}, {"round": 5, "value": "905672"}, {"round": 35, "value": "919797"}, {"round": 43, "value": "939312"}, {"round": 21, "value": "943070"}, {"round": 75, "value": "949050"}, {"round": 26, "value": "963350"}, {"round": 29, "value": "967411"}, {"round": 82, "value": "983768"}]}, "last2": {"price": "2000.00", "number": [{"round": 1, "value": "28"}]}, "last3f": {"price": "4000.00", "number": [{"round": 2, "value": "212"}, {"round": 1, "value": "334"}]}, "last3b": {"price": "4000.00", "number": [{"round": 1, "value": "697"}, {"round": 2, "value": "728"}]}, "near1": {"price": "100000.00", "number": [{"round": 1, "value": "095866"}, {"round": 2, "value": "095868"}]}};
+
+        document.getElementById('lotteryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var userNumber = document.getElementById('lotteryNumber').value.trim();
+    var resultDiv = document.getElementById('result');
+    var result = '';
+    var prizeTypes = [];
+    var prizeDetails = '';
+
+    function checkExactPrize(prizeType, prizeData) {
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userNumber) {
+                prizeTypes.push(prizeType);
+				if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'First'){
+					prizeType = 'รางวัลที่ 1';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Second'){
+					prizeType = 'รางวัลที่ 2';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Third'){
+					prizeType = 'รางวัลที่ 3';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Fourth'){
+					prizeType = 'รางวัลที่ 4';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Fifth'){
+					prizeType = 'รางวัลที่ 5';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Near1'){
+					prizeType = 'ข้างเคียงรางวัลที่ 1';
+				}
+				
+                prizeDetails += 'ถูกรางวัล' + prizeType + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkLast2Digits(prizeData) {
+        var userLast2 = userNumber.slice(-2);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userLast2) {
+                prizeTypes.push('last2');
+                prizeDetails += 'ถูกรางวัลเลขท้าย 2 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkFirst3Digits(prizeData) {
+        var userFirst3 = userNumber.slice(0, 3);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userFirst3) {
+                prizeTypes.push('last3f');
+                prizeDetails += 'ถูกรางวัลเลขหน้า 3 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkLast3Digits(prizeData) {
+        var userLast3 = userNumber.slice(-3);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userLast3) {
+                prizeTypes.push('last3b');
+                prizeDetails += 'ถูกรางวัลเลขท้าย 3 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    checkExactPrize('first', lotteryData.first);
+    checkExactPrize('second', lotteryData.second);
+    checkExactPrize('third', lotteryData.third);
+    checkExactPrize('fourth', lotteryData.fourth);
+    checkExactPrize('fifth', lotteryData.fifth);
+    checkLast2Digits(lotteryData.last2);
+    checkFirst3Digits(lotteryData.last3f);
+    checkLast3Digits(lotteryData.last3b);
+    checkExactPrize('near1', lotteryData.near1);
+
+    if (prizeTypes.length > 0) {
+        result = prizeDetails;
+    } else {
+        result = 'เสียใจด้วย	 &#128546; ไม่ถูกรางวัล';
+    }
+    resultDiv.innerHTML = result;
+		});
+});
+</script>
+<style>
+h1 {
+	color: #666;
+	text-align: center;
+}
+h2 {
+	color: #666;
+	text-align: center;
+}
+body,td,th {
+	font-family: "FC Minimal";
+	font-size: 48px;
+	color: #333333;
+}
+body {
+	background-image: url(multimedia/2024-07-23-check-lottery.gif);
+	background-size: 100px 50px;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.normal-text {
+	font-family: "FC Minimal";
+	font-size: 48px;
+	color: #000;
+}
+.bold-text {
+	color: #0077B6;
+	font-size: 56px;
+	font-weight: bold;
+}
+td {
+	color: #E8E8E8;
+	text-align: right;
+}
+.normal-bold {
+	font-weight: bold;
+}
+.normal-bold {
+	color: #000000;
+}
+.container {
+	max-width: 600px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #000000;
+        }
+        .lottery-checker {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        .lottery-checker h2 {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+        button[type="submit"] {
+            background-color: #00b4d8;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button[type="submit"] span {
+            margin-right: 5px;
+        }
+        button[type="submit"]:hover {
+            background-color: #0077B6;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+		#result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffea2f;
+    text-align: center;
+    font-size: 36px;
+	color:#000
+}
+#check {
+	font-weight: bold;
+	font-size: 62px;
+}
+#small {
+	font-size: 36px;
+	text-align: left;
+	color: #666666;
+}
+#img {
+	text-align: center;
+}
+#center {
+	text-align: center;
+}
+#header {
+	color: #333333;
+}
+#low {
+	color: #666;
+}
+#header2 {
+	color: #333333;
+}
+#gray {
+	color: #333333;
+}
+#gray {
+	color: #666666;
+}
+#mid {
+	text-align: center;
+}
+.mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+.mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+#mid {
+	text-align: center;
+}
+td {
+	text-align: center;
+}
+#left {
+	text-align: left;
+}
+#left {
+	text-align: left;
+}
+#left {
+	text-align: left;
+	color: #666666;
+}
+#grey {
+	color: #666666;
+}
+#grey {
+	color: #666;
+}
+#grey {
+	color: #666;
+}
+a:link {
+	color: #7B7B7B;
+	text-decoration: none;
+}
+a:hover {
+	color: #0077B6;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('multimedia/button/homeOn.png','multimedia/button/checkOn.png','multimedia/button/lotthaiOn.png','multimedia/button/sampleOn.png','multimedia/button/lotinterOn.png')">
+<table width="1522" border="0" align="center">
+  <tr>
+    <td colspan="2"><img src="multimedia/check_lottery_banenr (1).png" width="1815" height="300" /></td>
+  </tr>
+  <tr>
+    <td width="306" align="center" valign="top" bgcolor="#E8E8E8"><table width="303" border="0">
+      <tr>
+        <td width="297"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','multimedia/button/homeOn.png',1)"><img src="multimedia/button/homeOff.png" width="300" height="150" id="home" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="checklotto.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('check','','multimedia/button/checkOn.png',1)"><img src="multimedia/button/checkOff.png" width="300" height="150" id="check" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="sample.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('sample','','multimedia/button/sampleOn.png',1)"><img src="multimedia/button/sampleOff.png" width="300" height="150" id="sample" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="lotthai.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lotthai','','multimedia/button/lotthaiOn.png',1)"><img src="multimedia/button/lotthaiOff.png" width="300" height="150" id="lotthai" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="lotinter.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lotinter','','multimedia/button/lotinterOn.png',1)"><img src="multimedia/button/lotinterOff.png" width="300" height="150" id="lotinter" /></a></td>
+      </tr>
+    </table></td>
+    <td width="1505" align="center" valign="top" bgcolor="#FFFFFF"><table border="0" align="center">
+      <tr>
+        <th width="1198" align="left" scope="col"><h1 id='left'>สลากกินแบ่งโลก</h1></th>
+        </tr>
+      <tr>
+        <td height="168" id="small"><p>หลายท่านโดยเฉพาะคนไทย คงเข้าใจจากความเคยชินว่าสลากกินแบ่งมีอยู่เพียงประเภทเดียว คือประเภทที่พิมพ์ออกมาเป็นใบๆ มีตัวเลขประจำใบ แล้วนำออกขายอย่างที่เห็นอยู่ในปัจจุบัน และเข้าใจว่าส่วนที่เป็นการขายตัวเลขแบบอื่นๆ เช่น ขายเลขท้าย ขายการทายผลกีฬา ขายแบบกลุ่มตัวเลข รวมทั้งขายแบบเด็กจับฉลาก หรือซื้อแล้วรู้ผลทันที ล้วนไม่ใช่สลากกินแบ่ง</p></td>
+        </tr>
+      <tr>
+        <td id="small"><p>การเข้าใจเช่นนี้นับว่าเป็นการเข้าใจผิดเพราะจากผลการประชุมใหญ่ของสมาคมสลากกินแบ่งโลก (World Lottery Association : WLA) ที่เกิดขึ้นครั้งแรก ณ เมืองกลาสโกว์ประเทศสกอตแลนด์ ในปี พ.ศ. 2543 ว่าด้วยเรื่องประเภทของสลากกินแบ่ง โดยนับจากพื้นฐานความนิยม ที่เล่นกันในบรรดากลุ่มประเทศต่างๆ ทั่วโลก องค์กรนี้รับรองว่าสามารถจัดแบ่งประเภทของสลากทั้งหมดออกเป็น 5 ประเภท ได้แก่ สลากแบบธรรมดา สลากล็อตโต สลากแบบรู้ผลทันที สลากตัวเลข และสลากกีฬา ซึ่งสาระสำคัญของสลากประเภทต่างๆ มีดังต่อไปนี้</p>
+          <p>&nbsp;</p></td>
+        </tr>
+      <tr>
+        <td align="center" valign="middle"><h1>
+            สลากแบบธรรมดา</h1>
+          <h2>Conventional Lottery</h2></td>
+        </tr>
+      <tr>
+        <td height="769" id="mid"><p><img src="multimedia/lotinter/conventional lottery.png" width="420" height="310" /></p>
+          <p id='left'>สลากชนิดนี้จัดได้ว่าเป็นสลากแบบประเภท Passive อธิบายอย่างง่ายๆ ได้ว่า ตัวผู้เล่นเองจะไม่สามารถเลือกหมายเลขที่ต้องการได้ จะต้องทำการซื้อในจำนวนมากจึงจะมีโอกาสถูกมากขึ้น แต่เนื่องจากหมายเลขเองก็จะมีอยู่จำกัดตามจำนวนสลากที่พิมพ์ออกมาเท่านั้น เป็นที่นิยมเล่นกันมากในกลุ่มประเทศ ไทย ญี่ปุ่น สเปน และเยอรมนี ตามรูปแบบกำหนดการออกรางวัลของสลากประเภทนี้ แต่ละประเทศจะมีการกำหนดวันออกที่ไม่เหมือนกัน ซึ่งในบางประเทศอาจจะใช้เวลาถึง 6 เดือนในการออกรางวัลสลากแต่ละงวดก็เป็นได้</p></td>
+        </tr>
+      <tr>
+        <td height="187" align="center" valign="middle">
+          <h1>
+            สลากล็อตโต้
+          </h1>
+          <h2>LOTTO</h2></td>
+        </tr>
+      <tr>
+        <td height="993"><p><img src="multimedia/lotinter/lotto image.png" width="420" height="310" /></p>
+          <p><span id="grey">สลากชนิดนี้ถือได้ว่าเป็นเกมแบบ Active ที่ผู้เล่าทุกคนมีโอกาสในการเลือกซื้อสลากหมายเลขใดก็ได้ หรือจำนวนเท่าใดก็ได้ แล้วแต่ความประสงค์ที่จะต้องการซื้อ โดยมีวิธีการเล่นดังต่อไปน</span>ี้</p><ol id='left'><li><p>ในที่นี้ผู้เล่นซื้อ Lotto แบบ 6/49 หมายความว่า ผู้เล่นนั้นสามารถเลือกตัวเลขได้ 6 หมายเลข เช่น หมายเลข 2 9 13 27 31 และ 49 เป็นต้น</p></li> <li><p>เมื่อถึงเวลาออกรางวัล หมายเลขที่ออกคือ 2 10 13 24 31 และ 36 ซึ่งเท่ากับว่า ผู้เล่นมีเลขที่ถูกรางวัลด้วยกันถึง 3 หมายเลข คือ 2 13 และ 31</p>
+          </li>
+          <li><p>การถูกรางวัลจะได้มากหรือได้น้อยนั้น ขึ้นอยู่กับว่าจะถูกหมายเลขที่เล่นมากน้อยแค่ไหนซึ่งถ้าหากถูกทั้งหมด 6 ตัวที่เล่น ก็จะได้กับว่าได้ถูกรางวัล “แจ็คพอต” ซึ่งถือเป็นมูลค่าที่มหาศาลมาก
+          </p>
+          </li>
+          </ol>
+         
+          </td>
+        </tr>
+      <tr>
+        <td><h1>สลากแบบรู้ผลทันที</h1>
+          <h2>INSTANT LOTTERY</h2></td>
+        </tr>
+      <tr>
+        <td height="837"><p><img src="multimedia/lotinter/instant lottery.png" width="420" height="310" /></p>
+            <p id = 'left'> หลายคนมีคำถามว่าทำไมสลากชนิดนี้ถึงมีชื่อเรียกเช่นนี้ สาเหตุก็มาจากว่า เมื่อผู้เล่นทำการเล่นสลากเบอร์ใดก็ตาม ณ ตอนนั้น ก็จะได้รับทราบผลการออกรางวัลทันทีที่เล่นเสร็จ โดยเป็นที่นิยมเล่นกันมากในประเทศสหรัฐอเมริกา
+            ตามประวัติการเล่นสลากประเภทนี้ มีเกิดขึ้นครั้งแรกในประเทศสวิตเซอร์แลนด์ ซึ่งในครั้งนั้น การเล่นแต่ละครั้งตัวสลากเองจะถูกพับทบไปมาหลายครั้งเพื่อปกปิดผลรางวัลที่จะออก โดยได้มีการกำหนดตัวเลขไว้ล่วงหน้าก่อนแล้ว แต่การเล่นในปัจจุบัน สลากจะได้รับผลการพัฒนาให้ทราบผลได้ทันทีว่าจะ &ldquo;ได้&rdquo; หรือ &ldquo;สูญ&rdquo;
+เนื่องจากหมายเลขที่ถูกรางวัลจะถูกพิมพ์ลงในตั๋วสลากไว้แล้ว และจะถูกฉาบด้วยฟิล์มชนิดทึบแสงกันการมองเห็นจากภายนอกอีกที การจะรู้ผลได้ ผู้เล่นจะต้องทำการใช้ขอบเหรียญขดแถบฟิล์มทึบแสงออกเท่านั้น
+          </p></td>
+        </tr>
+      <tr>
+        <td height="187" id="mid"><h1>สลากตัวเลข</h1>
+          <h2>THE NUMBERS GAME</h2></td>
+        </tr>
+      <tr>
+        <td height="930"><p><img src="multimedia/lotinter/lotto number image.png" width="420" height="310" /></p>
+          <div>
+            <p><span id="grey">ตามบันทึกสลากประเภทนี้ได้ถูกนำขึ้นมาเล่นครั้งแรกในประเทศสหรัฐอเมริกา และประเทศแคนาดา ในมลรัฐคิวแบค ต่อมาได้เป็นที่แพร่หลายไปยังหลายๆ ประเทศ มีทั้งสลากประเภทแบบเลือก 3 ตัวเลข และสลากประเภทแบบเลือก 4 ตัวเลข ซึ่งวิธีการเล่นสลากแบบ 4 ตัวเลข จะมีวิธีการดังต่อไปนี้ คือ - ให้ตัวผู้เล่นทำการเลือกหมายเลขใดก็ได้ตามแต่ตัวเองต้องการ ตั้งแต่ 0000-9999 - จากนั้นให้เลือกรูปแบบที่จะทำการเล่น เช่น แบบถูกต้องทั้งตัวเลขและตำแหน่ง (Straignt) แบบถูกต้องเฉพาะตัวเลข แต่ตำแหน่งสลับกัน (Box) แบบถูกเฉพาะตัวเลขคู่หลัง (Back pair)</span></p>
+            <p>&nbsp;</p>
+      </div>
+          <div>
+            <p><span id="grey">ขั้นตอนต่อมา คือ การเลือกวันที่และจำนวนเงินที่จะเล่น พร้อมทั้งทำการกรอกข้อมูลต่างๆ เหล่านั้นลงบนแบบฟอร์ม (Betting Ship) หลังจากนั้นก็รอฟังผลการออกรางวัล โดยในที่นี้เรื่องของผลการออกรางวัลนั้น อาทิ บางที่จะออกรางวัลทุกวัน หรืออาจจะออกรางวัลเฉพาะวันเสาร์ก็มี เป็นต้น</span>          </p>
+          </div></td>
+        </tr>
+      <tr>
+        <td id="mid"><h1>
+          สลากกีฬา</h1>
+          <h2>TOTO</h2></td>
+        </tr>
+      <tr>
+        <td><p><img src="multimedia/lotinter/TOTO image.png" width="420" height="310" /></p>
+          <div>
+            <p><span id="grey">รูปแบบของสลากกีฬานั้นมีลักษณะเหมือนกับการทายผลการแข่งขันกีฬา โดยมีกลุ่มลูกค้าหรือกลุ่มผู้นิยมซื้อกันมากในบรรดาประเทศแถบยุโรปและอเมริกาใต้</span></p>
+            <span id="grey"><br />
+            </span>
+            <p><span id="grey">ส่วนวิธีการเล่นนั้นต้องอาศัยโชค ดวง และประสบการณ์ของตัวผู้เล่นเองเป็นหลัก ตัวผู้เล่นเองจะต้องมีความรู้ความชำนาญ หมั่นติดตามข่าวสารของวงการกีฬา ไม่ว่าจะเป็นในเรื่องของข้อมูลที่เป็นหลักข้อเท็จจริง หรือบทวิจารณ์จากผลการแข่งขันในแต่ละครั้งในช่วงเวลาที่ผ่านมาของกีฬานั้นๆ ซึ่งทั้งหมดก็เปรียบได้กับว่าเป็นเครื่องมือในการประกอบการตัดสินใจในการเล่น</span></p>
+            <span id="grey"><br />
+            </span></div>
+          <div>
+            <p><span id="grey">แต่ละครั้ง ตัวอย่างเช่น ในประเทศฮังการี ออกสลากโดยกำหนดให้แทงผลการแข่งขันฟุตบอลคู่สำคัญ ครั้งละ 14 คู่ ซึ่งโปรแกรมการแข่งขันจะมีทั้งในประเทศและนอกประเทศ โดยกำหนดให้หมายเลข &ldquo;1&rdquo; ทายว่าทีมเจ้าบ้านจะชนะกำหนดให้สัญลักษณ์ &ldquo;X&rdquo; ทายว่าทั้งสองทีมจะเสมอกัน และกำหนดให้หมายเลข &ldquo;2&rdquo; ทายว่าทีมเยือนจะชนะ ซึ่งหากผู้เล่นทายถูกทั้ง 14 คู่ ก็จะได้รับรางวัลก้อนโต ส่วนผู้เล่นที่ทายถูกน้อยที่สุดจำนวน 7 คู่ จะได้รางวัลต่ำสุด เป็นต้น ในบางประเทศอาจให้ทายผลว่า 8 ทีมที่เข้ารอบสุดท้ายจะเป็นทีมใด ใครตอบได้ถูกต้องทั้งหมดก็จะได้รับรางวัลใหญ่ ถูกน้อยลงมาก็ได้รางวัลเล็กลงตามลำดับ</span>          </p>
+          </div></td>
+        </tr>
+    </table>
+    
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#000000"><img src="multimedia/footer.png" width="1768" height="150" /></td>
+  </tr>
+</table>
+</body>
+</html>

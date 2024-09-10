@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Check Lottery</title>
+<script>
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+document.addEventListener('DOMContentLoaded', function() {
+var lotteryData = {"first": {"price": "6000000.00", "number": [{"round": 1, "value": "199606"}]}, "second": {"price": "200000.00", "number": [{"round": 4, "value": "190588"}, {"round": 2, "value": "218971"}, {"round": 3, "value": "253914"}, {"round": 1, "value": "536661"}, {"round": 5, "value": "878717"}]}, "third": {"price": "80000.00", "number": [{"round": 3, "value": "106515"}, {"round": 7, "value": "163064"}, {"round": 9, "value": "163488"}, {"round": 4, "value": "356438"}, {"round": 6, "value": "384338"}, {"round": 2, "value": "549686"}, {"round": 8, "value": "577240"}, {"round": 5, "value": "817554"}, {"round": 10, "value": "876783"}, {"round": 1, "value": "982233"}]}, "fourth": {"price": "40000.00", "number": [{"round": 1, "value": "011311"}, {"round": 29, "value": "016635"}, {"round": 11, "value": "076131"}, {"round": 22, "value": "083147"}, {"round": 39, "value": "088798"}, {"round": 33, "value": "102266"}, {"round": 42, "value": "114444"}, {"round": 37, "value": "136548"}, {"round": 41, "value": "158488"}, {"round": 47, "value": "177872"}, {"round": 17, "value": "190925"}, {"round": 19, "value": "194609"}, {"round": 10, "value": "235487"}, {"round": 20, "value": "251083"}, {"round": 49, "value": "261109"}, {"round": 12, "value": "276979"}, {"round": 2, "value": "278068"}, {"round": 18, "value": "300766"}, {"round": 36, "value": "301932"}, {"round": 35, "value": "371539"}, {"round": 48, "value": "380502"}, {"round": 46, "value": "380548"}, {"round": 25, "value": "422406"}, {"round": 13, "value": "425809"}, {"round": 50, "value": "427510"}, {"round": 45, "value": "427556"}, {"round": 3, "value": "434841"}, {"round": 26, "value": "462934"}, {"round": 32, "value": "520419"}, {"round": 27, "value": "522365"}, {"round": 14, "value": "534501"}, {"round": 6, "value": "544112"}, {"round": 7, "value": "545963"}, {"round": 21, "value": "653506"}, {"round": 15, "value": "667294"}, {"round": 5, "value": "670044"}, {"round": 23, "value": "705593"}, {"round": 24, "value": "706744"}, {"round": 40, "value": "740262"}, {"round": 34, "value": "757806"}, {"round": 43, "value": "766849"}, {"round": 9, "value": "766923"}, {"round": 44, "value": "793180"}, {"round": 8, "value": "819051"}, {"round": 16, "value": "860721"}, {"round": 30, "value": "863849"}, {"round": 28, "value": "875776"}, {"round": 38, "value": "889709"}, {"round": 4, "value": "894509"}, {"round": 31, "value": "973807"}]}, "fifth": {"price": "20000.00", "number": [{"round": 29, "value": "000159"}, {"round": 63, "value": "000633"}, {"round": 87, "value": "002932"}, {"round": 41, "value": "004833"}, {"round": 68, "value": "010931"}, {"round": 7, "value": "015106"}, {"round": 39, "value": "034196"}, {"round": 37, "value": "080992"}, {"round": 65, "value": "084945"}, {"round": 36, "value": "089629"}, {"round": 46, "value": "108699"}, {"round": 19, "value": "115133"}, {"round": 55, "value": "120482"}, {"round": 58, "value": "133944"}, {"round": 51, "value": "149142"}, {"round": 89, "value": "175130"}, {"round": 20, "value": "209064"}, {"round": 32, "value": "212789"}, {"round": 30, "value": "220461"}, {"round": 2, "value": "236040"}, {"round": 31, "value": "252076"}, {"round": 57, "value": "252771"}, {"round": 86, "value": "265188"}, {"round": 97, "value": "280983"}, {"round": 35, "value": "298997"}, {"round": 42, "value": "299985"}, {"round": 38, "value": "301833"}, {"round": 1, "value": "312177"}, {"round": 43, "value": "327793"}, {"round": 59, "value": "331907"}, {"round": 52, "value": "334112"}, {"round": 6, "value": "361316"}, {"round": 84, "value": "361411"}, {"round": 71, "value": "362992"}, {"round": 56, "value": "363020"}, {"round": 12, "value": "364848"}, {"round": 10, "value": "374966"}, {"round": 60, "value": "397357"}, {"round": 47, "value": "412225"}, {"round": 26, "value": "414395"}, {"round": 90, "value": "420449"}, {"round": 25, "value": "440126"}, {"round": 91, "value": "449498"}, {"round": 13, "value": "466805"}, {"round": 3, "value": "470826"}, {"round": 28, "value": "481631"}, {"round": 44, "value": "490262"}, {"round": 82, "value": "512985"}, {"round": 33, "value": "513241"}, {"round": 77, "value": "513564"}, {"round": 22, "value": "513957"}, {"round": 83, "value": "514656"}, {"round": 61, "value": "523090"}, {"round": 94, "value": "530321"}, {"round": 96, "value": "533132"}, {"round": 76, "value": "543792"}, {"round": 81, "value": "589955"}, {"round": 50, "value": "618969"}, {"round": 99, "value": "622312"}, {"round": 69, "value": "649429"}, {"round": 27, "value": "661364"}, {"round": 80, "value": "677710"}, {"round": 40, "value": "683559"}, {"round": 21, "value": "693506"}, {"round": 70, "value": "695017"}, {"round": 45, "value": "697944"}, {"round": 14, "value": "701245"}, {"round": 72, "value": "733586"}, {"round": 79, "value": "748201"}, {"round": 49, "value": "756125"}, {"round": 95, "value": "761425"}, {"round": 16, "value": "765472"}, {"round": 98, "value": "769582"}, {"round": 85, "value": "772492"}, {"round": 8, "value": "772619"}, {"round": 23, "value": "803238"}, {"round": 17, "value": "805461"}, {"round": 62, "value": "806578"}, {"round": 53, "value": "832624"}, {"round": 66, "value": "846704"}, {"round": 88, "value": "848584"}, {"round": 75, "value": "855671"}, {"round": 9, "value": "857502"}, {"round": 34, "value": "860241"}, {"round": 78, "value": "868140"}, {"round": 4, "value": "882871"}, {"round": 18, "value": "900635"}, {"round": 5, "value": "907234"}, {"round": 64, "value": "909446"}, {"round": 54, "value": "915196"}, {"round": 73, "value": "916474"}, {"round": 92, "value": "926437"}, {"round": 74, "value": "930105"}, {"round": 11, "value": "954277"}, {"round": 67, "value": "954381"}, {"round": 48, "value": "955685"}, {"round": 15, "value": "962806"}, {"round": 93, "value": "968699"}, {"round": 100, "value": "978954"}, {"round": 24, "value": "994390"}]}, "last2": {"price": "2000.00", "number": [{"round": 1, "value": "94"}]}, "last3f": {"price": "4000.00", "number": [{"round": 1, "value": "173"}, {"round": 2, "value": "220"}]}, "last3b": {"price": "4000.00", "number": [{"round": 1, "value": "094"}, {"round": 2, "value": "388"}]}, "near1": {"price": "100000.00", "number": [{"round": 1, "value": "199605"}, {"round": 2, "value": "199607"}]}};
+
+        document.getElementById('lotteryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var userNumber = document.getElementById('lotteryNumber').value.trim();
+    var resultDiv = document.getElementById('result');
+    var result = '';
+    var prizeTypes = [];
+    var prizeDetails = '';
+
+    function checkExactPrize(prizeType, prizeData) {
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userNumber) {
+                prizeTypes.push(prizeType);
+				if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'First'){
+					prizeType = 'รางวัลที่ 1';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Second'){
+					prizeType = 'รางวัลที่ 2';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Third'){
+					prizeType = 'รางวัลที่ 3';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Fourth'){
+					prizeType = 'รางวัลที่ 4';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Fifth'){
+					prizeType = 'รางวัลที่ 5';
+				}else if (prizeType.charAt(0).toUpperCase() + prizeType.slice(1) == 'Near1'){
+					prizeType = 'ข้างเคียงรางวัลที่ 1';
+				}
+				
+                prizeDetails += 'ถูกรางวัล' + prizeType + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkLast2Digits(prizeData) {
+        var userLast2 = userNumber.slice(-2);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userLast2) {
+                prizeTypes.push('last2');
+                prizeDetails += 'ถูกรางวัลเลขท้าย 2 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkFirst3Digits(prizeData) {
+        var userFirst3 = userNumber.slice(0, 3);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userFirst3) {
+                prizeTypes.push('last3f');
+                prizeDetails += 'ถูกรางวัลเลขหน้า 3 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    function checkLast3Digits(prizeData) {
+        var userLast3 = userNumber.slice(-3);
+        var numbers = prizeData.number;
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i].value === userLast3) {
+                prizeTypes.push('last3b');
+                prizeDetails += 'ถูกรางวัลเลขท้าย 3 ตัว ' + '<br>มูลค่า ' + prizeData.price + ' บาท' + '<br>';
+                break;
+            }
+        }
+    }
+
+    checkExactPrize('first', lotteryData.first);
+    checkExactPrize('second', lotteryData.second);
+    checkExactPrize('third', lotteryData.third);
+    checkExactPrize('fourth', lotteryData.fourth);
+    checkExactPrize('fifth', lotteryData.fifth);
+    checkLast2Digits(lotteryData.last2);
+    checkFirst3Digits(lotteryData.last3f);
+    checkLast3Digits(lotteryData.last3b);
+    checkExactPrize('near1', lotteryData.near1);
+
+    if (prizeTypes.length > 0) {
+        result = prizeDetails;
+    } else {
+        result = 'เสียใจด้วย	 &#128546; ไม่ถูกรางวัล';
+    }
+    resultDiv.innerHTML = result;
+		});
+});
+</script>
+<style>
+body,td,th {
+	font-family: "FC Minimal";
+	font-size: 48px;
+}
+body {
+	background-image: url(multimedia/2024-07-23-check-lottery.gif);
+	background-size: 100px 50px;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.normal-text {
+	font-family: "FC Minimal";
+	font-size: 48px;
+	color: #000;
+}
+.bold-text {
+	color: #0077B6;
+	font-size: 56px;
+	font-weight: bold;
+}
+td {
+	color: #E8E8E8;
+	text-align: center;
+}
+.normal-bold {
+	font-weight: bold;
+}
+.normal-bold {
+	color: #000000;
+}
+.container {
+	max-width: 600px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #000000;
+        }
+        .lottery-checker {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        .lottery-checker h2 {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+        button[type="submit"] {
+            background-color: #00b4d8;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button[type="submit"] span {
+            margin-right: 5px;
+        }
+        button[type="submit"]:hover {
+            background-color: #0077B6;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+		#result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffea2f;
+    text-align: center;
+    font-size: 36px;
+	color:#000
+}
+#check {
+	font-weight: bold;
+	font-size: 62px;
+}
+a:link {
+	color: #7D7D7D;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #0077B6;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('multimedia/button/homeOn.png','multimedia/button/checkOn.png','multimedia/button/lotthaiOn.png','multimedia/button/sampleOn.png','multimedia/button/lotinterOn.png')">
+<table width="1768" border="0" align="center">
+  <tr>
+    <td colspan="2"><img src="multimedia/check_lottery_banenr (1).png" width="1815" height="300" /></td>
+  </tr>
+  <tr>
+    <td width="306" align="center" valign="top" bgcolor="#E8E8E8"><table width="200" border="0">
+      <tr>
+        <td><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','multimedia/button/homeOn.png',1)"><img src="multimedia/button/homeOff.png" width="300" height="150" id="home" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="checklotto.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('check','','multimedia/button/checkOn.png',1)"><img src="multimedia/button/checkOff.png" width="300" height="150" id="check" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="sample.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('sample','','multimedia/button/sampleOn.png',1)"><img src="multimedia/button/sampleOff.png" width="300" height="150" id="sample" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="lotthai.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lotthai','','multimedia/button/lotthaiOn.png',1)"><img src="multimedia/button/lotthaiOff.png" width="300" height="150" id="lotthai" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="lotinter.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lotinter','','multimedia/button/lotinterOn.png',1)"><img src="multimedia/button/lotinterOff.png" width="300" height="150" id="lotinter" /></a></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p></td>
+    <td width="1452" align="center" valign="top" bgcolor="#FFFFFF">
+    <p></p>
+    <div class="container">
+      <div class="lottery-checker">
+        <h2>ตรวจหวยงวดล่าสุด</h2>
+        <form id="lotteryForm">
+            <div class="input-group">
+                <input type="text" id="lotteryNumber" name="lotteryNumber" maxlength="6" pattern="\d{6}" inputmode="numeric" required placeholder="กรอกเลขสลาก">
+            </div>
+            <button type="submit"><span>&#128269;</span> ตรวจหวย</button>
+        </form>
+    </div>
+    <div id="result"></div>
+    <p id="check">ตรวจหวยยังไง???</p>
+    </div>
+    <p>
+      <embed src="multimedia/howtochecklottery.mp4" width="1120" height="630"></embed>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp; </p></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#000000"><img src="multimedia/footer.png" width="1768" height="150" /></td>
+  </tr>
+</table>
+</body>
+</html>
